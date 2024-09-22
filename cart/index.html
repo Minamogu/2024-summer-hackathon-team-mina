@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/3c22621f4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="LOGO1.png" alt="TONEGAWA Logo" class="logo" onClick="window.location.reload()">
+            <input type="text" class="search-bar" placeholder="Search">
+            <i class="fa-solid fa-cart-shopping cart"  onclick="gotonewsite1()"></i><span id="count" class="cartnumber">0</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+         <div class="product-container">
+            <div class="product-images">
+            <img id="main-image" src="airpods-thumb1.png" alt="Main Product Image">
+            <div class="thumbnail-images">
+                <img src="airpods-thumb1.png" alt="Thumbnail 1" onclick="changeImage(this)">
+                <img src="airpods-thumb2.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                <img src="airpods-thumb3.png" alt="Thumbnail 3" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Apple AirPods (第3世代)</h1>
+                <p>Apple store</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">¥23,000 (税込)</div>
+                <div class="details"><pre>ブランド                  Apple(アップル)
+対応デバイス                イヤホン
+フォームの形式               ケース
+特徴                   ワイヤレス   充電
+対応電話モデル              不明</pre></div>
+                <button class="cart-button"><i class="fa-solid fa-cart-shopping cart cart-icon"></i>カートに入れる</button>
+                <button class="share-button" onclick="gotonewsite2()" ><i class="fa-solid fa-arrow-up-from-bracket share-icon"></i>シェアする</button>
+            </div>
+         </div>
+        </section>
+
+        <section class="reviews">
+           <div class="reviewtitle">*レビュー</div>
+            <input type="text" class="secondary-search" placeholder="キーワードでレビューを検索"></input>
+            <div class="review-container">
+             <div class="review">
+                <h3>補修製品として</h3>
+                <div class="rating-review1">★★★★</div>
+                <div class="detailedreview1">アップルストアで修理交換を考えてましたが、こちらで購入したほうが交通費分お得なので。ペアリング等は全く問題ありませんでした。
+                </div>
+                <div class="like-dislike">
+                 <button class="good"><i class="fa-regular fa-thumbs-up up"></i></button><span id="like-count" class="likenumber">0</span>
+                 <button class="bad"><i class="fa-regular fa-thumbs-down down"></i></button><span id="dislike-count" class="unlikenumber">0</span>
+                </div>
+             </div>
+            <div class="action-review">
+               <button class="add-review-button" onclick="gotonewsite3()"><i class="fa-regular fa-pen-to-square write"></i>レビューを投稿する</button>
+             </div>
+            </div>
+        </section>
+
+    <section class="suggested-products">
+    <div class="recommendedtitle">あなたへのおすすめ</div>
+    <div class="slider">
+        <div class="product-list" onclick="scrollToTopAndReload()">
+            <div class="suggested-product">
+                <img src="hair.png" class="photo1" alt="Product 1">
+                <p>【2024年発売】SALONIA サロニア  スピーディーイオンドライヤー</p>
+                <div class="rating-suggest1">★★★★★</div>
+                <div class="1price">¥4,310 </div>
+                </div>
+            <div class="suggested-product">
+                <img src="r1.png" class="photo2" alt="Product 2">
+                <p>Apple MacBook Pro Liquid Retina XDRディスプレイ 14.2</p>
+                <div class="rating-suggest2">★★★★★</div>
+                <div class="2price">¥36,480 </div>
+            </div>
+            <div class="suggested-product">
+                <img src="r2.png" class="photo3" alt="Product 3">
+                <p>Apple Mac mini 2023年CTOモデル</p>
+                <div class="rating-suggest3">★★★★★</div>
+                <div class="3price">¥144,310 </div>
+            </div>
+            <div class="suggested-product">
+                <img src="r3.png" class="photo4" alt="Product 4">
+                <p>Apple Watch SE（第2世代） シルバーアルミニウムケースとストームブルースポーツバンド</p>
+                <div class="rating-suggest4">★★★★★</div>
+                <div class="4price">¥38,590 </div>
+            </div>
+            <div class="suggested-product">
+                <img src="r4.png" class="photo5" alt="Product 5">
+                <p>Apple Gift Card(10,000円)</p>
+                <div class="rating-suggest5">★★★★★</div>
+                <div class="5price">¥10,000 </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p> TONEGAWA All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
